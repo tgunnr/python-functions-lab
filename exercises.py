@@ -69,10 +69,8 @@ print('Exercise 3:', apply_discount(80, 10))
 
 def convert_temperature(temp, unit):
     if unit == 'C':
-        # Convert Celsius to Fahrenheit
         return (temp * 9/5) + 32
     elif unit == 'F':
-        # Convert Fahrenheit to Celsius
         return (temp - 32) * 5/9
 
 print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
@@ -93,3 +91,19 @@ def sum_to(n):
 
 print('Exercise 5:', sum_to(6))
 print('Exercise 5:', sum_to(10))
+
+# Exercise 6: Find the Largest Number
+#
+# Write a function named `largest` that takes three integers as arguments and returns the largest of them.
+#
+# Examples:
+# largest(1, 2, 3) should return 3.
+# largest(10, 4, 2) should return 10.
+#
+# Define your function and test it with different inputs.
+
+def largest(a, b, c):
+    return max(a, b, c)
+
+print('Exercise 6:', largest(1, 2, 3))
+print('Exercise 6:', largest(10, 4, 2))
